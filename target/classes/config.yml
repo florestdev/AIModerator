@@ -1,0 +1,30 @@
+api_key: "YOUR_FIREWORKS_API_KEY"
+
+rules:
+
+  rule1:
+    name: "Не оскорблять"
+    description: "Запрещены оскорбления, маты, унижения"
+    threshold: 0.6
+
+    action: "kick"              # kick / ban / warn / command
+    action_message: "Ты нарушил правило: %rule%"
+    command: ""                 # используется только при action: command
+
+  rule2:
+    name: "Не спамить"
+    description: "Запрещено повторять одно и то же"
+    threshold: 0.5
+
+    action: "warn"
+    action_message: "Не спамь, пожалуйста!"
+    command: ""
+
+  rule3:
+    name: "Запрещённая реклама"
+    description: "Нельзя рекламировать другие сервера"
+    threshold: 0.7
+
+    action: "command"
+    action_message: "Реклама запрещена!"
+    command: "tempban %player% 10m Реклама запрещена!"

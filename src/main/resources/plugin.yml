@@ -1,0 +1,19 @@
+name: AIModerator
+version: '1.0'
+main: ru.florestdev.aIModerator.AIModerator
+api-version: '1.21'
+prefix: AIModerator
+load: STARTUP
+authors: [FlorestDev]
+description: This is a plugin for moderating messages, books and others.
+
+commands:
+  aimreload:
+    description: Reload AIModerator configuration
+    usage: /aimreload
+    permission: aimoderator.reload
+
+permissions:
+  aimoderator.reload:
+    description: Allows reloading AIModerator config
+    default: op
